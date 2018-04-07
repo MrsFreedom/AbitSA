@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block main %}
+    {% for teacher in teachers %}
+        <div class="teacher">
+            <div class="photo">
+               <img  src="{{ teacher.photo.url }}/">
+
+            </div>
+            <h1><a href="{% url 'mentor_detal' pk=teacher.pk %}">{{ teacher.name }}</a></h1>
+            <p>{{ teacher.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

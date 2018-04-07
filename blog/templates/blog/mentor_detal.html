@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block main %}
+    <div class="teacher">
+        {% if teachers.name %}
+            <div class="teacher">
+                {{ teacher.name }}
+
+            <div class="col-lg-4 col-md-4 col-sm-21 col-xs-12 col-lg-push-4 col-md-push-4 col-sm-push-0">
+				<div class="wd_about_infobox wd_toppadder20">
+					<div class="wd_about_infobox_img">
+						<span><img src="{{ teachers.photo.url }}/" alt="Line" class="img-responsive"></span>
+
+					</div>
+					<h2> {{ teachers.name }}</h2>
+					<h3>{{ teachers.position }}</h3>
+                    <h3>{{ teachers.academic_degree }}</h3>
+                    <p><a>{{ teachers.email }}</a></p>
+
+                    <h3>{{ teachers.info }}</h3
+				</div>
+			</div>
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}

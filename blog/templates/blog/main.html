@@ -1,0 +1,55 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block main %}
+    <div class="page-header" >
+        <h1><a href="#" > <p class="text-right">КАФЕДРА СИСТЕМНОГО АНАЛИЗА</p></a></h1>
+    </div>
+    <div class="content container">
+        <section id="" class="light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4  text-default" style="border-right:1px solid #cccccc;">
+                        <div class="feature_teaser">
+                        <a href="{% url 'bacalavr' %}"><img   alt="" src="https://plethorathemes.com/wordpress/cleanstart/wp-content/uploads/sites/2/2014/08/phone-v2.png" class="center-block" ></a>
+                            <h3 class="text-center" >
+                                <a  href="{% url 'bacalavr' %}">БАКАЛАВРИАТ
+                                </a></h3>
+                            <p></p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4  text-default" style="border-right:1px solid #cccccc;">
+                        <div class="feature_teaser">
+                        <a href="{% url 'magistr' %}"><img  alt="" src="https://plethorathemes.com/wordpress/cleanstart/wp-content/uploads/sites/2/2014/08/lib-v2.png" class="center-block">
+                        </a><h3 class="text-center"><a href="{% url 'magistr' %}">МАГИСТРАТУРА</a></h3>
+                            <p></p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4  text-default"><div class="feature_teaser">
+                        <a href="{% url 'aspir' %}"><img alt="" src="https://plethorathemes.com/wordpress/cleanstart/wp-content/uploads/sites/2/2014/08/rocket_trans-v2.png" class="center-block">
+                        </a> <h3 class="text-center"><a href="{% url 'aspir' %}">АСПИРАНТУРА</a></h3>
+                        <p></p>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+     <div class="page-header" >
+        <h1><a href="#" > <p class="text-right">NОВОСТИ</p></a></h1>
+    </div>
+     <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #828282">
+        <a>kzkzkzkzkkz</a>
+
+    </div>
+{% endblock %}
