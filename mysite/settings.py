@@ -14,7 +14,7 @@ SECRET_KEY = '!w@64x+2m186l)vrts3*5f6mckot#i@^m#n!u47325at%#vs7x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [mrsfreedom.pythonanywhere.com]
 
 
 # Application definition
@@ -117,5 +117,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-EASY_MAPS_GOOGLE_MAPS_API_KEY = 'AIzaSyA4orNc_e0f-1r28x-pLbUhkBMpfBQnYK0'
+
 TEMPLATE_DEBUG = True
