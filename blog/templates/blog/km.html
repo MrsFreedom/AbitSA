@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}"  type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <title>Title</title>
+</head>
+<style>
+      UL{
+    color: black;
+    font-family: 'Amatic SC', cursive;
+            font-size: 200%;}
+.nav-pills > li.active > a{
+   background-color:   black;
+}
+.nav-pills > li > a {
+    color: black;}
+.center-img {
+  display: block;
+  margin: 170px;
+}
+     .fig {
+    text-align: center; /* Выравнивание по центру */
+            font-family: 'Amatic SC', cursive; color: white
+   }
+          .round2 {
+
+            height: 100px;
+            width: 100px;
+    border-radius: 300px; /* Радиус скругления */
+    border: 3px black; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+   }
+     .round {
+
+            height: 300px;
+            width: 300px;
+    border-radius: 300px; /* Радиус скругления */
+    border: 3px black; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+   }
+</style>
+<body>
+<div  id="p" class="container-fluid"  >
+    <div class="row" style="background-color: black">
+        <div class="col-sm-4">
+              <p  class="fig" ><img
+           src={% static "image/км.jpg"%} class="round" >
+                </p>
+        </div>
+        <div class="col-sm-8">
+            <p style="text-align: center; font-family: 'Amatic SC'; font-size: 500%; color: white; padding: 5%">Кафедра математики</p>
+        </div>
+</div>
+</div>
+
+
+    <div class="container-fluid" style="padding: 250px">
+        <h1 align="center"     style=" font-size: 500%; font-family: 'Amatic SC', cursive; color: black; padding: 10%">Информация</h1>
+            <div class="row"><div class="col-sm-4">
+            <ul class="nav nav-pills nav-stacked" >
+
+                        <li class="active"><a data-toggle="pill" href="#step1">Заведующий кафедрой </a></li>
+
+
+
+
+                        <li><a data-toggle="pill" href="#step2">Контакты</a></li>
+
+
+
+                        <li><a data-toggle="pill" href="#step3">Научно-исследовательская работа</a></li>
+
+
+
+
+
+                         <li><a data-toggle="pill" href="#step6">История кафедры</a></li>
+
+            </ul>
+         </div>
+
+            <div class="col-sm-8">
+                <div class="tab-content">
+                    <div id="step1" class="tab-pane fade in active">
+                        <p style="text-align: center;"> <img
+           src={% static "image/gruzdkov.jpg"%}  ></p><br>
+ <p> Заведующий кафедрой –  доктор физико-математических наук
+Груздков Алексей Андреевич
+
+</p>
+                        <br>
+                    </div>
+                     <div id="step2" class="tab-pane fade">
+  <h3>Контакты</h3>
+
+                         <p style="padding: 10%">Местный телефон: 2713 <br>
+E-mail: maths_dept@technolog.edu.ru</p>
+                     </div>
+                         <div id="step3" class="tab-pane fade">
+                         <h3>Научно-исследовательская работа</h3>
+                            <p>C 1967 года на кафедре работал известный специалист в области математических методов геофизики, лауреат Государственной премии, профессор П. В. Крауклис. Математическим вопросам квантовой теории поля и статистической физики посвящены работы В. С. Капитонова. Специалистом по теории игр является Т. В. Слободинская. Математическим вопросам механики посвящены работы А. А. Груздкова. Специалистом в области математической статистики является  П. Е. Баскакова. А. В. Ржонсницкий – специалист в области абстрактной алгебры. В 2009 году успешно защитил докторскую диссертацию А.А. Груздков.</p>
+
+                         </div>
+
+                    <div id="step6" class="tab-pane fade">
+                         <h3>История кафедры</h3>
+                        <p>Организатором кафедры высшей математики Технологического института в 1862 г. был профессор М. А. Красновский. Под его руководством были разработаны курсы аналитической геометрии, дифференциальных уравнений, теории вероятности, изданы первые учебники и учебные пособия.
+В период с 1891 по 1900 г. кафедрой руководил профессор Д. Ф. Селиванов, много сделавший для развития преподавания математики в институте.
+В 1900 г. кафедру возглавил профессор Б. М. Коялович. Отличный математик и блестящий педагог, он в течение 30 лет руководил преподаванием математики в институте. Б. М. Коялович был членом Санкт-Петербургского математического общества, членом Ученого комитета Министерства просвещения, он сотрудничал в Международной комиссии по реформе преподавания математики. Его перу принадлежат 46 работ по различным разделам математики. По его инициативе впервые в план преподавания математики были введены практические занятия.
+С 1931 по 1955 г., в том числе и в период эвакуации института в Казань во время Великой Отечественной войны, заведующим кафедрой был профессор Н. С. Михельсон. В эти годы были пересмотрены программы курса, разработаны руководства и пособия по математике для студентов. В годы войны доцент кафедры математики Веллер Л. И. был проректором института в Ленинграде, где в лабораториях института производились порох, мины, медикаменты. В 1945 г. Н. С. Михельсону фактически пришлось создавать кафедру заново. За большие достижения в научной и педагогической деятельности в 1951 г. он был награжден орденом Ленина.
+В 1955-1957 гг. кафедру высшей математики возглавлял доцент В. Г. Горбацкий, а с 1957 по 1958 г. – профессор Д. М. Волков.
+С 1959 по 1965 г. кафедрой руководил профессор П. П. Касьянков. В этот период главным направлением в работе кафедры было внедрение в курс высшей математики методов приближенных вычислений с применением ЭВМ. Разработан курс “Программирование”, пересмотрены учебные программы.
+Эта работа продолжалась, когда заведующими кафедрой были доцент В. П. Торопина (1966-1968 гг.), доцент А. В. Швецов (1968-1969 гг.) и профессор
+Д. Ф. Харазов (1969-1970 гг.).
+С 1970 по 1983 г., когда заведующим кафедрой был доцент А. М. Абаньшин, курс высшей математики перерабатывался на основе новых научно-методических принципов в связи с потребностями в математических методах других кафедр института. В этой работе активно участвовали доцент Столярова Э. К. и Доброхотова Г. П., ст. преп. Паульсен А. Н. и Романовская Л. Н. Курс высшей математики был существенно расширен, появились новые разделы. Над методическим обеспечением курса много работал ст. преп. Поникаровский И. Г. Развиваются такие направления в работе кафедры, как НИРС (этой работой занимались Ю. А. Необердин и А. Л. Фельштын), подготовительное отделение, Малый технологический факультет. Под руководством доцента Пуниной В. А. была разработана программа единого математического образования студентов института.
+На базе кафедры в 1980 г. созданы кафедра Высшей и кафедра Прикладной математики.
+В 1983-1990 гг. заведующим кафедрой был доцент Ю. П. Волков, а с 1991 г. кафедру возглавляет доцент Т. В. Слободинская. В этот нелегкий для института период, в значительной степени благодаря организаторским качествам и педагогическому мастерству Т. В. Слободинской, кафедра не только сохранила жизнеспособность, но и значительно повысила свой научный и научно-исследовательский потенциал. Были разработаны новые учебные программы, изданы новые методические разработки, введена курсовая работа, интенсивно развивалась НИРС. Т. В. Слободинская – член Совета Ассоциации преподавателей математики вузов Северо-Запада и Совета по математике при Министерстве образования и науки РФ.
+На протяжении долгих лет с 1968 по 2009 год на кафедре работал замечательный ученый и человек профессор, лауреат Государственной премии П.В. Крауклис.
+                     </div>
+                </div>
+        </div></div>
+
+<div class="container-fluid">
+<a class="center-img" href="{% url 'base' %}" style="text-align: center; font-size: 300%;font-family: 'Amatic SC', cursive; color: black; height: 10px"><img
+           src={% static "image/назад.png"%} class="round2">
+                <br>Назад</a>
+</div></div>
+</body>

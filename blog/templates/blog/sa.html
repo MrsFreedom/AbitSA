@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}"  type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript" src="{% static 'map.js' %}"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <title>Title</title>
+</head>
+<style>
+   body {margin: 0; padding: 0;}
+
+.map {
+	position: relative;
+	text-align: center;
+}
+
+
+
+.part {
+	opacity: .3;
+}
+
+.part:hover {
+	transition: opacity .2s ease;
+	opacity: .5;
+	cursor: pointer;
+}
+
+
+.description {
+
+	width: 200px;
+	height: 200px;
+	box-shadow: 0 0 32px 10px #ccc;
+
+
+}
+
+
+
+            UL{
+    color: black;
+    font-family: 'Amatic SC', cursive;
+            font-weight: bold;
+            font-size: 200%;}
+.nav-pills > li.active > a{
+   background-color:   black;
+}
+.nav-pills > li > a {
+    color: black;
+}
+    .center-img {
+  display: block;
+  margin: 170px;
+}
+     .fig {
+    text-align: center; /* Выравнивание по центру */
+            font-family: 'Amatic SC', cursive; color: white
+   }
+          .round2 {
+
+            height: 100px;
+            width: 100px;
+    border-radius: 300px; /* Радиус скругления */
+    border: 3px black; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+   }
+     .round {
+
+            height: 300px;
+            width: 300px;
+    border-radius: 300px; /* Радиус скругления */
+    border: 3px black; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+   }
+</style>
+<body>
+<div  id="p" class="container-fluid"  >
+    <div class="row"style="background-color: black">
+        <div class="col-sm-4">
+              <p  class="fig" href="{% url 'aphp' %}"  ><img
+           src={% static "image/кса.png"%} class="round" >
+                </p>
+        </div>
+        <div class="col-sm-8">
+            <p style="text-align: center; font-family: 'Amatic SC';color: white; font-size: 500%; padding: 5%">Кафедра системного анализа и информационных технологий</p>
+        </div>
+</div>
+</div>
+
+
+    <div class="container-fluid" style="padding: 150px">
+        <h1 align="center"     style=" font-size: 500%; font-family: 'Amatic SC', cursive; color: black; padding: 10%">Информация</h1>
+            <div class="row"><div class="col-sm-4">
+            <ul class="nav nav-pills nav-stacked" >
+
+                        <li class="active"><a data-toggle="pill" href="#step1">Заведующий кафедрой </a></li>
+
+
+
+
+                        <li><a data-toggle="pill" href="#step2">Контакты</a></li>
+
+
+
+                        <li><a data-toggle="pill" href="#step3">Бакалавриат</a></li>
+
+
+
+                        <li><a data-toggle="pill" href="#step4">Магистратура</a></li>
+
+
+
+                        <li><a data-toggle="pill" href="#step5">Аспирантура</a></li>
+                                <li><a data-toggle="pill" href="#step6">Таблица Менделеева</a></li>
+
+
+
+            </ul>
+         </div>
+
+            <div class="col-sm-8">
+                <div class="tab-content">
+                    <div id="step1" class="tab-pane fade in active">
+                        <p style="text-align: center;"> <img
+           src={% static "image/musaev.jpg"%}  ></p><br>
+ <p> Заведующий кафедрой - профессор, доктор технических наук
+Мусаев Александр Азерович
+     <br>
+<br>
+Заместители заведующего кафедрой
+<br>
+по научной работе: д.т.н., профессор Юленец Юрий Павлович<br>
+по учебной работе: к.т.н, доцент Краснобородько Денис Александрович<br>
+по административно-хозяйственным и организационным вопросам:  к.т.н., доцент Гайков Андрей Владимирович</p>
+                        <br>
+                    </div>
+                     <div id="step2" class="tab-pane fade">
+  <h3>Контакты</h3>
+
+                         <p style="padding: 10%">Телефон: (812) 494-9302, местный: 2416
+
+<br>
+E-mail:  sa@sa.lti-gti.ru <br>
+Сайт кафедры: http://sa.technolog.edu.ru</p>
+                     </div>
+                         <div id="step3" class="tab-pane fade">
+                         <h3>Бакалавриат</h3>
+                            <p>бакалавров по направлению 27.03.03 - «Системный анализ и управление», направленность программы бакалавриата - «Системный анализ и управление в химической технологии»;</p>
+
+                         </div>
+                 <div id="step4" class="tab-pane fade">
+                         <h3>Магистратура</h3>
+                             <p>магистров по направлению 27.04.03 - «Системный анализ и управление», направленность магистерской программы - «Системный анализ и управление в организационных системах». </p>
+                     </div>
+                 <div id="step5" class="tab-pane fade">
+                         <h3>Аспирантура</h3>
+<p>05.13.01 - Системный анализ, управление и обработка информации<br>
+05.13.06 - Автоматизация и управление технологическими процессами и производствам<br>
+05.13.18 - Математическое моделирование, численные методы и комплексы программ</p>
+                     </div>
+                                     <div id="step6" class="tab-pane fade">
+                         <h3>Таблица менделеева</h3>
+                                         <a href="{% url 'table' %}">Таблица Менделеева</a>
+
+
+                                             </div>
+
+                     </div>
+
+                </div>
+        </div></div>
+        <div class="container-fluid">
+<a class="center-img" href="{% url 'base' %}" style="text-align: center; font-size: 300%;font-family: 'Amatic SC', cursive; color: black; height: 10px"><img
+           src={% static "image/назад.png"%} class="round2">
+                <br>Назад</a>
+</div>
+</div>
+<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{% static "map.js"%}"></script>
+
+</body>

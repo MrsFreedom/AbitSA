@@ -1,9 +1,10 @@
 {% load static %}
+
+{% load staticfiles %}
 <html >
     <head>
-        <title>Абитуриент СА</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="shortcut icon" href="{% static "image/favicon.ico"%}" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}"  type="text/css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,34 +18,111 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     </head>
+    <style>
+
+.center-img {
+  display: block;
+  margin: 170px;
+}
+.fig2 {
+    text-align: center; /* Выравнивание по центру */
+   }
+
+        .fig {
+    text-align: center; /* Выравнивание по центру */
+            font-family: 'Amatic SC', cursive; color: white
+   }
+        .round {
+
+            height: 300px;
+            width: 300px;
+    border-radius: 300px; /* Радиус скругления */
+    border: 3px black; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+   }
+        UL{
+    color: black;
+    font-family: 'Amatic SC', cursive;
+            font-weight: bold;
+            font-size: 200%;}
+.nav-pills > li.active > a{
+   background-color:   black;
+}
+.nav-pills > li > a {
+    color: black;
+}
+    </style>
     <body>
-   <nav class="navbar navbar-default navbar-fixed-top" style="height: 70px">
-  <div class="container-fluid" >
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a class="navbar-brand"href="{% url 'main'%}"><img class="img-responsive2"
-           src={% static "image/log.png"%}></a>
+
+
+<div  id="p" class="container-fluid"  style="background-image: url('{% static "image/2.jpg" %}'); background-size: cover; height: 70%; /* Высота блока */">
+<h1 align="left" style="  font-size: 850%;font-family: 'Amatic SC', cursive; color: white">фАКУЛЬТЕТ </h1>
+<h1 align="left" style="  font-size: 750%;font-family: 'Amatic SC', cursive; color: white">ИНФОРМАЦИОННЫХ </h1>
+<h1 align="left" style="  font-size: 700%;font-family: 'Amatic SC', cursive; color: white">ТЕХНОЛОГИЙ И УПРАВЛЕНИЯ</h1>
+</div>
+
+      <div class="container" style="padding: 300px;"></div>
+    <div class="container-fluid" style="background-color: white" >
+            <div class="row">
+                <div class="col-sm-6" >
+
+
+                <a  class="center-img" href="{% url 'bacalavr' %}" style=" text-align: center; font-size: 300%;font-family: 'Amatic SC', cursive; color: black" ><img
+           src={% static "image/bacal.png"%} class="round" >
+                    <br>Бакалавриат
+                </a><br>
+
+
+
+
+                </div>
+                 <div class="col-sm-6" >
+                <a class="center-img" href="{% url 'magistr' %}" style="text-align: center; font-size: 300%;font-family: 'Amatic SC', cursive; color: black"><img
+           src={% static "image/magis.png"%} class="round">
+                <br>Магистратура</a>
+            </div>
+
+            </div>
+    </div>
+     <div class="container-fluid" style="padding: 10px;background-color: black">
+    <h1 align="center"     style="font-size: 500%;font-family: 'Amatic SC', cursive; color: white">Кафедры факультета</h1>
+    </div>
+    <div class="container-fluid" style="background-color: black" >
+            <div class="row">
+                <div class="col-sm-3" >
+
+
+                <a  class="fig" href="{% url 'aphp' %}" style="color: white; font-size: 230%" ><img
+           src={% static "image/кх.png"%} class="round" >
+                <br>Кафедра автоматизации процессов химической промышленности</a>
+
+
+                </div>
+                 <div class="col-sm-3" >
+                <a class="fig" href="{% url 'sapr' %}"style="color: white; font-size: 230%; text-align: center"><img
+           src={% static "image/кап.png"%} class="round">
+                <br>Кафедра систем автоматизированного проектирования и управления</a>
+            </div>
+                 <div class="col-sm-3" >
+                <a  class="fig" href="{% url 'sa' %}"style="color: white; font-size: 230%"><img
+           src={% static "image/кса.png"%} class="round">
+                <br>Кафедра системного анализа и информационных технологий </a>
+            </div>
+                 <div class="col-sm-3" >
+                <a  class="fig" href="{% url 'km' %}"style="color: white; text-align: center; font-size: 230%"><img
+           src={% static "image/км.jpg"%} class="round" >
+               <br> Кафедра математики</a>
+            </div>
+            </div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="navbar-right">
-      <ul class="nav navbar-nav">
-        <li><a href="{% url 'main'%}">Главная</a></li>
-        <li><a href="{% url 'teacher'%}">Преподаватели</a></li>
-          <li><a href="#">НИР</a></li>
-          <li><a href="{% url 'home'%}">Общежитие</a></li>
-          <li><a href="#">О кафедре</a></li>
-
-      </ul>
-
-
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-                {% block main %}
-            {% endblock %}
+    <div class="container"  style="padding: 50px;">
+    <p style="font-family: 'Amatic SC', cursive; font-size: 150%"> "Наш факультет один из самых молодых в университете. Мы добиваемся, чтобы студенты были интегрированы в научные исследования. Если говорить об аналитических технологиях, то нужно выходить на сверхновые направления, на технологии создания искусственного интеллекта. Когда мы решаем задачу, исходя из здравого смысла, то выбираем самый лучший шаг из имеющихся, затем второй – тоже лучший и так далее. Но с точки зрения системного анализа, конечное решение получается не оптимальным. Классика системного анализа утверждает: оптимальное решение может получиться как раз посредством неоптимальных шагов, в результате произвольного набора. Так называемый метод эволюционной оптимизации – это новое перспективное направление. И мы движемся в этом направлении. Второй уровень интеграции: факультет - производство. Таким образом, объединяется интеллектуальный потенциал студентов, преподавателей и специалистов для решения задач на реальном производстве."
+        <br></p>
+        <p style="text-align: right; font-family: 'Amatic SC'; font-size: 190%">-Александр Мусаев, декан факультета информационных технологий и управления, доктор технических наук, профессор</p>
+    </div>
 </body>
 </html>

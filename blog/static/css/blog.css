@@ -1,9 +1,4 @@
 
-.page-header {
-    background-color: #4169E1 ;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-}
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     margin-right: auto;
@@ -16,11 +11,11 @@
     margin-left: 40px;
 }
 h3 a{
- font-family: 'Press Start 2P', cursive;
+    font-family: 'Amatic SC', cursive;
     color: #828282;
 }
 h1, h2, h3, h4 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Amatic SC', cursive;
 
 }
 
@@ -32,22 +27,17 @@ h1, h2, h3, h4 {
     float: right;
 }
 
-.post-form textarea, .post-form input {
+
+
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: red;
+}
+
+#p {
+ height: 100%;
+    margin: auto;
+
+    position: absolute;
     width: 100%;
 }
-
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    margin-bottom: 70px;
-}
-
-.post h1 a, .post h1 a:visited {
-    color: #000000;
-}
-body { padding-top: 150px; }

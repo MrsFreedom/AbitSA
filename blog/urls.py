@@ -2,16 +2,16 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='main'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    url(r'^$', views.main, name='main'),
+url(r'^base/$', views.base, name='base'),
+    url(r'^sa/$', views.sa, name='sa'),
+    url(r'^aphp/$', views.aphp, name='aphp'),
+    url(r'^sapr/$', views.sapr, name='sapr'),
+    url(r'^km/$', views.km, name='km'),
+    url(r'^dostijenia/$', views.dostijenia, name='dostijenia'),
     url(r'^bacalavr/$', views.bacalavr, name='bacalavr'),
     url(r'^magistr/$', views.magistr, name='magistr'),
-    url(r'^aspir/$', views.aspir, name='aspir'),
-    url(r'^prog_bac/$', views.prog_bac, name='prog_bac'),
-    url(r'^teacher/$', views.teacher, name='teacher'),
-    url(r'^home/$', views.home, name='home'),
-    url(r'^map/$', views.map, name='map'),
-    url(r'^mentor_detal/(?P<pk>\d+)$', views.mentor_detal, name='mentor_detal'),
+    url(r'^table/$', views.table, name='table'),
 
 
 ]

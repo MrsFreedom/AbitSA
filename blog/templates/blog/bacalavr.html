@@ -1,42 +1,140 @@
+<!DOCTYPE html>
+{% load static %}
 
-{% extends 'blog/base.html' %}
-{% block main %}
-<div class="container">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}"  type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <ul class="nav nav-pills nav-justified">
-    <li class="active"><a data-toggle="pill" href="#home">Направление</a></li>
-    <li><a data-toggle="pill" href="#menu1">Программа</a></li>
-    <li><a data-toggle="pill" href="#menu2">О специальности</a></li>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-  </ul>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h3>Направление</h3>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <p>Форма обучения</p>
-                    <p>Очная</p>
-                </div>
-                 <div class="col-md-4">
-                    <a>Количество мест</a>
-                </div>
-                 <div class="col-md-4">
-                    <a>Стоимость обучения</a>
-                </div>
-            </div>
-        </div>
-      </div>
-    <div id="menu1" class="tab-pane fade">
-      <h3>Программа</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <h3>О специальности</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-    </div>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <title>Title</title>
+</head>
+<style>
+            UL{
+    color: black;
+    font-family: 'Amatic SC', cursive;
+            font-weight: bold;
+            font-size: 200%;}
+.nav-pills > li.active > a{
+   background-color:   black;
+}
+.nav-pills > li > a {
+    color: black;
+}
+    .center-img {
+  display: block;
+  margin: 170px;
+}
+     .fig {
+    text-align: center; /* Выравнивание по центру */
+            font-family: 'Amatic SC', cursive; color: white
+   }
+          .round2 {
 
-  </div>
+            height: 100px;
+            width: 100px;
+    border-radius: 300px; /* Радиус скругления */
+    border: 3px black; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+   }
+     .round {
+
+            height: 300px;
+            width: 300px;
+    border-radius: 300px; /* Радиус скругления */
+    border: 3px black; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+   }</style>
+<body>
+<div  id="p" class="container-fluid"  style="padding: 5%;background-image: url('{% static "image/123.jpg" %}'); background-size: cover; height: 40%; /* Высота блока */">
+<h1 align="left"  style="  font-size: 1000%;font-family: 'Amatic SC', cursive; color: black">Бакалавриат </h1>
 </div>
-{% endblock %}
+ <div class="container-fluid" style="padding: 100px;">
+    <a align="center"     style=" font-size: 500%; font-family: 'Amatic SC', cursive; color: black">Ступени поступления</a>
+    </div>
+    <div class="container-fluid">
+        <h1 align="center"     style=" font-size: 500%; font-family: 'Amatic SC', cursive; color: black">Ступени поступления</h1>
+            <div class="col-sm-4">
+            <ul class="nav nav-pills nav-stacked" >
+
+                        <li class="active"><a data-toggle="pill" href="#step1">Выбираю направление</a></li>
+
+
+
+
+                        <li><a data-toggle="pill" href="#step2">Ознакамливаюсь с правилами приёма</a></li>
+
+
+
+                        <li><a data-toggle="pill" href="#step3">Сдаю вступительные испытания</a></li>
+
+
+
+                        <li><a data-toggle="pill" href="#step4">Подаю документы</a></li>
+
+
+
+                        <li><a data-toggle="pill" href="#step5">Убеждаюсь в поступлении</a></li>
+
+
+            </ul>
+         </div>
+
+            <div class="col-sm-8">
+                <div class="tab-content">
+                    <div id="step1" class="tab-pane fade in active">
+
+                        Процесс поступления начинается не со сдачи ЕГЭ, сборов документов и прочих организационных моментов, а с постановки цели, к которой вы идете. Чтобы четко поставить
+                             цель и двигаться к своей мечте, необходимо внимательно изучить направления, программы подготовки. Сделай правильно свой выбор!</a><br>
+ <a href={% static "file1.pdf"%}>Перечень специальностей и направлений подготовки с указанием условий поступления в 2018 году</a>
+                        <br>
+                        <a href={% static "111.pdf"%}>Стоимость обучения на контрактной основе</a>
+                    </div>
+                     <div id="step2" class="tab-pane fade">
+
+
+                         <a href={% static "file.pdf"%}>Правила приёма 2018</a><br>
+                          <a href={% static "file2.pdf"%}>Количество мест для приёма на обучение (контрольные цифры приёма) на бюджет 2018</a><br>
+                          <a href={% static "file3.pdf"%}>Количество мест для приёма на обучение по договорам об оказании платных образовательных услуг 2018</a><br>
+                         <a href="{% url 'dostijenia' %}">Информация о порядке учета индивидуальных достижений поступающего</a>
+                     </div>
+                         <div id="step3" class="tab-pane fade">
+                         <h3>Вступительные испытания</h3>
+                             <a href={% static "file4.pdf"%}>Перечень вступительных испытаний с указанием приоритетности вступительных испытаний при ранжировании списков поступающих </a><br>
+                    <a href={% static "file5.pdf"%}>Перечень вступительных испытаний для каждого отдельного конкурса с указанием минимального количества баллов по каждому предмету в 2018 году</a><br>
+                    <a href={% static "file6.pdf"%}>Информация о формах проведения вступительных испытаний, проводимых организацией самостоятельно</a><br>
+                              <a href={% static "file7.pdf"%}>Информация о сроках проведения приема для каждой совокупности условий поступления в СПбГТИ(ТУ) в 2018 году</a><br>
+                     </div>
+                 <div id="step4" class="tab-pane fade">
+                         <h3>Подача документов</h3>
+                             <p>Документы принимаются по адресу: Санкт-Петербург, Московский пр., 26 </p>
+                     <p>Почтой: документы направляются через операторов почтовой связи по адресу: 190013, Санкт-Петербург, Московский пр. 26, Приемная комиссия</p>
+                     </div>
+                 <div id="step5" class="tab-pane fade">
+                         <h3>Информация и приказы о зачислении</h3>
+
+                     </div>
+                </div>
+        </div>
+        <div class="container-fluid">
+<a class="center-img" href="{% url 'base' %}" style="text-align: center; font-size: 300%;font-family: 'Amatic SC', cursive; color: black; height: 10px"><img
+           src={% static "image/назад.png"%} class="round2">
+                <br>Назад</a>
+</div>
+</div>
+</body>
+</html>
