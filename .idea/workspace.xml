@@ -2,55 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13887273-9bc2-468a-8cbe-76b9b1cd0d00" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/static/image/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/image/кап.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/image/км.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/image/кса.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/image/кх.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/aphp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/dostijenia.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/km.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/sa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/sapr.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/image/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/image/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/aspir.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/bacalavr.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/magistr.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/mentor_detal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/prog_bac.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/teacher.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/6_OrC0PhM.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/media/photo/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_ananchenko.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_ananchenko_3iXLSWJ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_ananchenko_9iHFNAt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_borovinskay.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_chepikova_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_chumakov_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_gaykov_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_holodnov_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_krasnoborodko_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_kulishenko_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_kuricin_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_mamaeva_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_milovanovich_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_musaev_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_prostitenko_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_rogov_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_sirenek_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_ulenec_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/foto_vih_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/photo/Лист_1.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -480,12 +432,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32838285" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.2344932" side_tool="true" visible="true" weight="0.29372936" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.23524962" side_tool="true" visible="true" weight="0.29372936" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49848714" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.7655068" visible="true" weight="0.29372936" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.76475036" visible="true" weight="0.29372936" />
       <window_info content_ui="combo" x="8" y="31" width="667" height="689" id="Project" order="0" visible="true" weight="0.20121029" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.037821483" />
